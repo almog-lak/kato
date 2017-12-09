@@ -1,7 +1,30 @@
 <div [@routerTransition]>
     <app-page-header [heading]="'Contacts'" [icon]="'fa-table'"></app-page-header>
     <div class="row">
-        <div class="col col-xl-12 col-lg-12">
+        <div class="col col-12">
+            <div class="card mb-12">
+                <div class="card-header">Import Contacts</div>
+                <div class="card-body">
+                    <div class="input-group image-preview">
+                        <input type="text" class="form-control image-preview-filename" disabled="disabled">
+                        <span class="input-group-btn">
+                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+                        <span class="fa fa-trash-o"></span> Clear
+                    </button>
+                    <div class="btn btn-default image-preview-input">
+                        <span class="fa fa-folder-open"></span>
+                        <span class="image-preview-input-title">Browse</span>
+                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/>
+                    </div>
+                </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col col-12">
             <div class="card mb-12">
                 <div class="card-header">Loaded Contacts</div>
                 <div class="card-body table-responsive">
@@ -20,22 +43,22 @@
                             <td>Almog Laktivi</td>
                             <td>0523790759</td>
                             <td>2</td>
-                            <td>--edit-icon--</td>
-                            <td>--delete-icon--</td>
+                            <td><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></td>
+                            <td><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i></td>
                         </tr>
                         <tr>
                             <td>Roi Shemesh</td>
                             <td>0545458754</td>
                             <td>1</td>
-                            <td>--edit-icon--</td>
-                            <td>--delete-icon--</td>
+                            <td><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></td>
+                            <td><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i></td>
                         </tr>
                         <tr>
                             <td>Yotam Avivi</td>
                             <td>0526458774</td>
                             <td>0</td>
-                            <td>--edit-icon--</td>
-                            <td>--delete-icon--</td>
+                            <td><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></td>
+                            <td><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i></td>
                         </tr>
                         </tbody>
                     </table>

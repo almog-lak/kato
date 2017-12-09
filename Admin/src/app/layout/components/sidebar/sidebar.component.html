@@ -1,0 +1,28 @@
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
+    <ul class="list-group">
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;{{ 'Dashboard' | translate }}
+        </a>
+        <!--<a [routerLink]="['/charts']" [routerLinkActive]="['router-link-active']" class="list-group-item">-->
+            <!--<i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;{{ 'Charts' | translate }}-->
+        <!--</a>-->
+        <a [routerLink]="['/contacts']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-table"></i>&nbsp;{{ 'Contacts' | translate }}
+        </a>
+        <!--<a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']" class="list-group-item">-->
+            <!--<i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'Forms' | translate }}-->
+        <!--</a>-->
+        <a [routerLink]="['/bs-element']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-desktop"></i>&nbsp;{{ 'Send Flows' | translate }}
+        </a>
+        <a [routerLink]="['/grid']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-wrench"></i>&nbsp;{{ 'Guide' | translate }}
+        </a>
+        <a [routerLink]="['/components']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-th-list"></i>&nbsp;{{ 'Devices' | translate }}
+        </a>
+        <a [routerLink]="['/blank-page']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-file-o"></i>&nbsp;{{ 'About' | translate }}
+        </a>
+    </ul>
+</nav>
